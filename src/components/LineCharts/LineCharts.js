@@ -1,4 +1,5 @@
 import React from 'react';
+import { CartesianGrid, Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
 
 const LineCharts = () => {
     const data = [
@@ -46,9 +47,17 @@ const LineCharts = () => {
         },
       ];
     return (
-        <div>
-            
-        </div>
+      //creating simple line chart
+        <LineChart height={300} width={700} data={data}
+        margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+          <CartesianGrid strokeDasharray="3 3" />
+          <Line dataKey={'red'} stroke='red'></Line>
+          <Line dataKey={'green'} stroke= 'green'></Line>
+          <Line dataKey={'blue'} stroke='blue'></Line>
+          <XAxis dataKey={'name'}></XAxis>
+          <YAxis></YAxis>
+          <Tooltip></Tooltip>
+        </LineChart>
     );
 };
 
