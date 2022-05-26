@@ -2,6 +2,7 @@ import './App.css';
 import AreaCharts from './components/AreaCharts/AreaCharts';
 import BarCharts from './components/BarCharts/BarCharts';
 import LineCharts from './components/LineCharts/LineCharts';
+import SpecialCharts from './components/SpecialCharts/SpecialCharts';
 
 function App() {
   return (
@@ -16,6 +17,9 @@ function App() {
 
       <h3 style={{marginTop:"50px"}}>Responsible Area Charts</h3>
       <AreaCharts></AreaCharts>
+
+      <h3 style={{marginTop:"50px"}}>Charts with Axios Js</h3>
+      <SpecialCharts></SpecialCharts>
     </div>
   );
 }
